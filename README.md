@@ -1,4 +1,4 @@
-project 2 - ITM 362
+Project 2 - ITM 362
 
 myIIT Rehab - For this project, we will redesign the myIIT login page, welcome page, and one more aspect of the site (TBD) to reflect what we learned in HCI.
 
