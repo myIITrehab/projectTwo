@@ -10,3 +10,4 @@ Aury - I'd like to believe that JavaScript is my forte. I am also pretty confide
 
 Isabel - I believe my strengths include a better understanding with CSS and feel like I can do much more with it, but I would also like to challenge myself with JS this time and get more hands on with it.
 
+Shameemah - I believe that my strengths are in CSS, JavaScript, and design theory in general. 
