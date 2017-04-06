@@ -186,7 +186,7 @@ textarea {
 /* ===== BASE STYLES ===== */
 
 html {
-  background-image: url("background.jpg");
+  background-image: url("mobilebg.jpg");
   color: white;
   font-family: Century Schoolbook, Century Gothic, CenturyGothic, AppleGothic, sans-serif;
   font-size: 1.125 em; /* 18 px */
@@ -238,5 +238,10 @@ input[type = "submit"]{
 
 /* ===== MODULAR STYLES ===== */
 
+img {
+  display: block;
+  max-width: 70%;
+  padding: 0.5em;
+}
 
 /* ===== STATE STYLES ===== */
