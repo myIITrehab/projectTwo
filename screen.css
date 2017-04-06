@@ -192,6 +192,7 @@ html {
   font-size: 1.125 em; /* 18 px */
   line-height: 1.25em; /* 22.5 / 18 */
   padding: 0.5em;
+  text-align: center;
 }
 
 body {
@@ -217,15 +218,12 @@ label, input {
   box-sizing: border-box;
   display: block;
   padding: 0.2em;
+  text-align: left;
 }
 
 
 input {
   margin-left: 0.3em; 
-}
-
-label {
-  font-size: ;
 }
 
 input[type = "submit"]{
@@ -242,6 +240,8 @@ img {
   display: block;
   max-width: 70%;
   padding: 0.5em;
+  margin-left: auto;
+  margin-right: auto; 
 }
 
 /* ===== STATE STYLES ===== */
