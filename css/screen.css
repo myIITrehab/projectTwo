@@ -218,6 +218,8 @@ h1 {
 
 h2 {
   font-family: "Helvetica Neue LT W01_41488878", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 0.6222em;
 }
 
 h3 {
@@ -294,6 +296,16 @@ input[type="submit"] {
 	margin-top: -0.6222em;
 	padding-bottom: 0.6222em;
 	font-weight: 900;
+}
+
+#support {
+	background-color: rgb(47, 59, 68, 0.8);
+	text-align: left;
+	padding: 1.244em;
+}
+
+.support-info a {
+	color: #FFF;
 }
 
 
