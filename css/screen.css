@@ -205,7 +205,7 @@ body {
   margin: 0.5em;
 }
 
-header {
+header, footer {
   background-color: rgba(0, 0, 0, 0.66);
   padding-top: 0.622em;
 }
@@ -231,6 +231,7 @@ h3 {
 a {
   color: rgb(229, 24, 55);
 }
+
 
 /* Form */
 
