@@ -245,7 +245,15 @@ img {
   margin-right: auto; 
 }
 /* ===== LAYOUT STYLES ===== */
+h3 {
+  margin-top: 0.6222em; /* 14px @ 22.5px*/
+  padding-top: 0.6222em; /* 14px @ 22.5px*/
+  padding-bottom: 0.6222em; /* 14px @ 22.5px*/
+}
 
+#page {
+  padding: 0.6222em; /* 14px @ 22.5px*/
+}
 
 /* ===== MODULAR STYLES ===== */
 form li {
@@ -284,3 +292,34 @@ input[type="submit"]:hover {
 
 
 /* ===== STATE STYLES ===== */
+.hasjs input[type="submit"] {
+  transition: position 1s;
+  position: absolute;
+  left: -444.44em; /* -10000px @ 22.5px */
+}
+
+.hasjs input[type="submit"].active {
+  position: static;
+}
+
+.hasjs #input-username,
+#input-password {
+  position: relative;
+}
+
+.hasjs #input-username label,
+.hasjs #input-password label {
+  transition: top 0.3s;
+  top: 1.244em; /* 28px @ 22.5px*/
+  position: absolute;
+}
+
+.hasjs #input-username label.login-active,
+.hasjs #input-password label.login-active {
+  top: 0;
+}
+
+.hasjs input[type="text"].login-active,
+.hasjs input[type="password"].login-active {
+  box-shadow: none;
+}
