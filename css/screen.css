@@ -189,6 +189,11 @@ http://www.modularscale.com/?18&px&1.2&web&text */
 
 html {
   background-image: url("/img/mobilebg.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
   text-align: center;
   font-size: 1.406em; /*22.5px @ 16px */
   line-height: 1.22em; /*28px @ 18px */
@@ -285,14 +290,24 @@ input[type="submit"] {
 	padding: 0.6222em;
 }
 
+#forgot-password {
+	margin-top: -0.6222em;
+	padding-bottom: 0.6222em;
+	font-weight: 900;
+}
+
+
+/* ===== STATE STYLES ===== */
 input[type="submit"]:hover {
   color: #FFF;
   background-color: rgb(229, 24, 55);
   box-shadow: none;
 }
 
+#forgot-password a:hover {
+	color: rgb(47, 59, 68);
+}
 
-/* ===== STATE STYLES ===== */
 .hasjs input[type="submit"] {
   transition: position 1s;
   position: absolute;
