@@ -45,6 +45,7 @@ jQuery(function($) {
     $(element).on('focus', function() {
       $(impactedElement).addClass('login-active');
       $(affectedElement).addClass('login-active');
+      $(impactedElement).css("color", "grey");
     });
   }
   
@@ -53,6 +54,7 @@ jQuery(function($) {
     $(element).on('click', function() {
       $(impactedElement).addClass('login-active');
       $(affectedElement).focus();
+      $(impactedElement).css("color", "grey");
     });
   }
   
@@ -62,6 +64,7 @@ jQuery(function($) {
       if($(element).val().length === 0) {
         $(impactedElement).removeClass('login-active');
         $(affectedElement).removeClass('login-active');
+        $(impactedElement).css("color", "black");
       }
     });
   }
@@ -69,17 +72,5 @@ jQuery(function($) {
   function resetForms() {
     document.forms['login-form'].reset();
   }
-  
-  $("#logintrouble").click(function(event){
-      event.preventDefault();
-      $("#logintroublepar").toggle();
-    });
-  });
- 
-   $("document").ready(function(){
-    $("#supportbutton").click(function(event){
-      event.preventDefault();
-      $("#support").toggle();
-    });
 });  
   
