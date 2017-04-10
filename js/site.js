@@ -13,6 +13,12 @@ jQuery(function($) {
   var passwordLabel = '#input-password label';
   var typePassword = 'input[type="password"]';
   
+  //toggle element variables
+  var logInTroubleId = '#login-trouble';
+  var logInTroubleInfoId = '#login-trouble-info';
+  var contactId = '#contact';
+  var contactInfoClass = '.contact-info';
+  
   $('html').removeClass('nojs');
   $('html').addClass('hasjs');
   
@@ -22,6 +28,8 @@ jQuery(function($) {
   addClassClick('h1', usernameLabel, usernameId);
   removeClassBlur(usernameId, usernameLabel, typeText);
   removeClassBlur(passwordId, passwordLabel, typePassword);
+  hideAndToggle(logInTroubleId, logInTroubleInfoId)
+  hideAndToggle(contactId, contactInfoClass)
   resetForms();
   
   //validate input
@@ -36,21 +44,19 @@ jQuery(function($) {
   });
   
   //Form submit action
-  $( "#login-form" ).submit(function( event ) {
+  $( '#login-form' ).submit(function(event) {
     event.preventDefault();
-  });
-  
-  //Toggle functionality for support text
-  $("#logintrouble").on('click', function(event){
-    event.preventDefault();
-    $("#logintroublepar").toggle();
-  });
-  
-  $("#contact-info").on('click', function(event){
-    event.preventDefault();
-    $(".support-info").toggle();
   });
 
+	//function to hide and toggle text
+	function hideAndToggle(elementId, toggleElementId) {
+		$(toggleElementId).hide();
+    $(elementId).on('click', function(event){
+    	event.preventDefault();
+    	$(toggleElementId).toggle();
+  	});
+  }
+  
   //function for addCLass/focus
   function addClassFocus(element, impactedElement, affectedElement) {
     $(element).on('focus', function() {
