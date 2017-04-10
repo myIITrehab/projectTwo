@@ -39,6 +39,17 @@ jQuery(function($) {
   $( "#login-form" ).submit(function( event ) {
     event.preventDefault();
   });
+  
+  //Toggle functionality for support text
+  $("#logintrouble").on('click', function(event){
+    event.preventDefault();
+    $("#logintroublepar").toggle();
+  });
+  
+  $("#contact-info").on('click', function(event){
+    event.preventDefault();
+    $(".support-info").toggle();
+  });
 
   //function for addCLass/focus
   function addClassFocus(element, impactedElement, affectedElement) {
