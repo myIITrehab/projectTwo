@@ -186,7 +186,7 @@ textarea {
 /* ===== BASE STYLES ===== */
 
 html {
-  background-image: url("mobilebg.jpg");
+  background-image: url("/img/mobilebg.jpg");
   color: white;
   font-family: Century Schoolbook, Century Gothic, CenturyGothic, AppleGothic, sans-serif;
   font-size: 1.125 em; /* 18 px */
