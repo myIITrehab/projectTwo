@@ -193,12 +193,16 @@ html {
   font-size: 1.406em; /*22.5px @ 16px */
   line-height: 1.22em; /*28px @ 18px */
   font-family: "Helvetica Neue LT W01_35 Thin", Helvetica, Arial, sans-serif;
-  color: white;
+  color: #FFF;
 }
 
 body {
-  background-color: rgba(0, 0, 0, 0.66);
   margin: 0.5em;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.66);
+  padding-top: 0.622em;
 }
 
 h1 {
@@ -218,18 +222,25 @@ h3 {
 }
 
 a {
-  color: red;
+  color: rgb(229, 24, 55);
 }
 
 /* Form */
+
+form {
+	padding-top: 1.244em;
+	background-color: rgba(255, 255, 255, 0.66);
+}
+
 label {
   display: block;
-  text-align: center;
+  text-align: inherit;
   width: 100%;
+  color: black;
 }
 
 input {
-  padding: 0.4148em;
+  padding: 0.6222em;
   box-sizing: border-box;
   width: 100%;
   font-family: inherit;
@@ -240,7 +251,7 @@ input {
 
 img {
   display: block;
-  max-width: 50%;
+  max-width: 40%;
   margin-left: auto;
   margin-right: auto; 
 }
@@ -262,7 +273,12 @@ form li {
 
 input[type="text"],
 input[type="password"] {
+	color: black;
+	border: 0;
+	/* 
+
   border: 0.1em solid rgba(170, 102, 68, 0.1);
+ */
   /* 
 background-color: white;
   -webkit-appearance: none;
@@ -275,18 +291,14 @@ background-color: white;
 input[type="submit"] {
   border: 0;
   font-family: "Helvetica Neue LT W01_55 Roman", Helvetica, Arial, sans-serif;
- /* 
- background-color: rgba(170, 102, 68, 0.9);
-  -webkit-appearance: none;
-  -webkit-box-shadow: 0.05555em 0.05555em 0.05555em 0.025em #993311;
-  box-shadow: 0.05555em 0.05555em 0.05555em 0.025em  #993311;
-  -moz-box-shadow: 0.05555em 0.05555em 0.05555em 0.025em #993311;
- */
+  color: #FFF;
+ 	background-color: rgb(47, 59, 68);
+
 }
 
 input[type="submit"]:hover {
-  color: #ffeedd;
-  background-color: #993311;
+  color: #FFF;
+  background-color: rgb(229, 24, 55);
   box-shadow: none;
 }
 
@@ -310,7 +322,7 @@ input[type="submit"]:hover {
 .hasjs #input-username label,
 .hasjs #input-password label {
   transition: top 0.3s;
-  top: 1.244em; /* 28px @ 22.5px*/
+  top: 0.6222em; /* 28px @ 22.5px*/
   position: absolute;
 }
 
