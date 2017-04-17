@@ -194,7 +194,7 @@ html {
   -o-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
-  text-align: center;
+  text-align: left;
   font-size: 1.406em; /*22.5px @ 16px */
   line-height: 1.22em; /*28px @ 18px */
   font-family: "Helvetica Neue LT W01_35 Thin", Helvetica, Arial, sans-serif;
@@ -213,6 +213,7 @@ header, footer {
 h1 {
   font-size: 1.562em;/* 35.156px @ 22.5px*/
   line-height: 1.593em; /*56px @ 35.156px*/
+  text-align: center;
   font-family: "Helvetica Neue LT W01_55 Roman", Helvetica, Arial, sans-serif;
 }
 
@@ -237,6 +238,7 @@ a {
 form {
 	padding-top: 1.244em;
 	background-color: rgba(255, 255, 255, 0.66);
+	text-align: center;
 }
 
 label {
@@ -261,6 +263,12 @@ img {
   margin-left: auto;
   margin-right: auto; 
 }
+
+footer {
+	font-size: 0.77em; /*17px @ 22.5px */
+	padding: 0.622em;
+}
+
 /* ===== LAYOUT STYLES ===== */
 h3 {
   margin-top: 0.6222em; /* 14px @ 22.5px*/
@@ -300,8 +308,8 @@ input[type="submit"] {
 
 #support {
 	background-color: rgb(47, 59, 68, 0.8);
-	text-align: left;
 	padding: 1.244em;
+	margin-bottom: 1.244em;
 }
 
 .contact-info a {
