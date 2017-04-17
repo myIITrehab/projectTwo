@@ -7,21 +7,21 @@ jQuery(function($) {
   var usernameId = '#username';
   var usernameLabel = '#input-username label';
   var typeText = 'input[type="text"]';
-  
+
   //password variables
   var passwordId = '#password';
   var passwordLabel = '#input-password label';
   var typePassword = 'input[type="password"]';
-  
+
   //toggle element variables
   var logInTroubleId = '#login-trouble';
   var logInTroubleInfoId = '#login-trouble-info';
   var contactId = '#contact';
   var contactInfoClass = '.contact-info';
-  
+
   $('html').removeClass('nojs');
   $('html').addClass('hasjs');
-  
+
   //Function Calls
   addClassFocus(usernameId, usernameLabel, typeText);
   addClassFocus(passwordId, passwordLabel, typePassword);
@@ -31,7 +31,7 @@ jQuery(function($) {
   hideAndToggle(logInTroubleId, logInTroubleInfoId)
   hideAndToggle(contactId, contactInfoClass)
   resetForms();
-  
+
   //validate input
   $('#username, #password').on('keyup focus blur', function() {
     var currentUsernameVal = $('#username').val();
@@ -42,10 +42,22 @@ jQuery(function($) {
       $('#submit').removeClass('active');
     }
   });
-  
+
   //Form submit action
   $( '#login-form' ).submit(function(event) {
     event.preventDefault();
+  });
+
+//checks to see if users enters "@hawk.iit.edu" or "@iit.edu" and  removes those parts
+  $('#username').on('keyup focus blur', function() {
+    var currentUserVal = $('#username').val();
+    if (currentUserVal.match(/^(.+)@iit\.edu|^(.+)@hawk.iit.edu/))
+    {
+      $(this).next('input:password').focus();
+      uservalue=currentUserVal.match(/^(.+)@/)[1];
+      $('#username').val(uservalue);
+
+    }
   });
 
 	//function to hide and toggle text
@@ -56,7 +68,7 @@ jQuery(function($) {
     	$(toggleElementId).toggle();
   	});
   }
-  
+
   //function for addCLass/focus
   function addClassFocus(element, impactedElement, affectedElement) {
     $(element).on('focus', function() {
@@ -65,7 +77,7 @@ jQuery(function($) {
       $(impactedElement).css("color", "grey");
     });
   }
-  
+
   //function for addClass/click
   function addClassClick(element, impactedElement, affectedElement) {
     $(element).on('click', function() {
@@ -74,7 +86,7 @@ jQuery(function($) {
       $(impactedElement).css("color", "grey");
     });
   }
-  
+
   //function for removeClass/blur
   function removeClassBlur(element, impactedElement, affectedElement) {
     $(element).on('blur', function() {
@@ -85,9 +97,8 @@ jQuery(function($) {
       }
     });
   }
-  
+
   function resetForms() {
     document.forms['login-form'].reset();
   }
-});  
-  
+});
