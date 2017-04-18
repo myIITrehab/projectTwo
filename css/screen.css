@@ -206,7 +206,7 @@ body {
 }
 
 header {
-  background-color: rgb(47, 59, 68, 0.9);
+  background-color: rgba(47, 59, 68, 0.9);
   padding-top: 0.622em;
 }
 
@@ -267,7 +267,7 @@ img {
 footer {
   font-size: 0.77em; /*17px @ 22.5px */
   padding: 0.622em;
-  background-color: rgb(47, 59, 68, 0.9);
+  background-color: rgba(47, 59, 68, 0.9);
 }
 
 /* ===== LAYOUT STYLES ===== */
@@ -328,7 +328,7 @@ h4 a,
 }
 
 #support {
-  background-color: rgb(47, 59, 68, 0.9);
+  background-color: rgba(47, 59, 68, 0.9);
   padding: 1.244em;
   margin-bottom: 1.244em;
 }
@@ -342,21 +342,21 @@ h4 a,
 #friday,
 #reg-info,
 .course-content {
-	background-color: rgb(47, 59, 68, 0.9);
+	background-color: rgba(47, 59, 68, 0.9);
 	padding-left: 0.622em;
 	padding-bottom: 0.622em;
 }
 
 #tuesday,
 #thursday {
-	background-color: rgb(255, 255, 255, 0.8);
+	background-color: rgba(255, 255, 255, 0.8);
 	margin-bottom: -0.622em;
 	margin-top: -0.622em;
 	padding-left: 0.622em;
 }
 
 #class-schedule-label {
-	background-color: rgb(255, 255, 255, 0.8);
+	background-color: rgba(255, 255, 255, 0.8);
 	color: rgb(0, 0, 0);
 	padding-top: 0.622em;
 	margin-bottom: -0.622em;
@@ -390,10 +390,55 @@ h4 a,
 }
 
 /* ===== STATE STYLES ===== */
+@media screen and (min-width: 26.625em) {
+	img {
+		max-width: 30%
+	}
+}
 
-@media screen and (min-width: 37.5em) {
+@media screen and (min-width: 42.375em) {
+	img {
+		max-width: 25%;
+	}
+}
+
+@media screen and (min-width: 48em) {
+	img {
+		max-width: 20%
+	}
+
+  #navbar {
+    margin: 0;
+  }
+
+  #navbar ul {
+  	text-align: center;
+  }
+
+  #navbar ul li
+  {
+    display: inline-block;
+    width: 28%;
+    margin-left: -0.2em;
+    margin-right: -0.2em;
+  }
+}
+
+@media screen and (max-width: 53.3125em) {
+  html{
+    font-size: 1.25em;
+    line-height: 1.2em;
+  }
 
 }
+
+@media screen and (min-width: 75em) {
+  html{
+    font-size: 1.5em;
+    line-height: 1.2em;
+  }
+}
+
 
 #navbar ul li:hover,
 input[type="submit"]:hover {
