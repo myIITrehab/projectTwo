@@ -314,12 +314,6 @@ h4 a,
 	color: #FFF;
 }
 
-#academics #nav_academics a,
-#support #nav_support a,
-#student_life #nav_student_life a{
-    background:silver;
-}
-
 #forgot-password {
   margin-top: -0.6222em;
   padding-bottom: 0.6222em;
@@ -343,8 +337,8 @@ h4 a,
 	background: rgb(229, 24, 55);
 }
 
-#monday, 
-#wednesday, 
+#monday,
+#wednesday,
 #friday,
 #reg-info,
 .course-content {
@@ -396,6 +390,11 @@ h4 a,
 }
 
 /* ===== STATE STYLES ===== */
+
+@media screen and (min-width: 37.5em) {
+
+}
+
 #navbar ul li:hover,
 input[type="submit"]:hover {
   color: #FFF;
