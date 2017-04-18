@@ -46,8 +46,9 @@ jQuery(function($) {
   //Form submit action
   $( '#login-form' ).submit(function(event) {
     event.preventDefault();
+    window.location.replace('academics/index.html'); // Takes users in soon as they submit
   });
-  
+
   //checks to see if users enters "@hawk.iit.edu" or "@iit.edu" and  removes those parts
   $('#username').on('keyup focus blur', function() {
     var currentUserVal = $('#username').val();
