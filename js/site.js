@@ -4,9 +4,9 @@ $.noConflict();
 jQuery(function($) {
 
  //username variables
-  var usernameId = '#username';
-  var usernameLabel = '#input-username label';
-  var typeText = 'input[type="text"]';
+ var usernameId = '#username';
+ var usernameLabel = '#input-username label';
+ var typeText = 'input[type="text"]';
 
   //password variables
   var passwordId = '#password';
@@ -28,8 +28,8 @@ jQuery(function($) {
   addClassClick('h1', usernameLabel, usernameId);
   removeClassBlur(usernameId, usernameLabel, typeText);
   removeClassBlur(passwordId, passwordLabel, typePassword);
-  hideAndToggle(logInTroubleId, logInTroubleInfoId)
-  hideAndToggle(contactId, contactInfoClass)
+  hideAndToggle(logInTroubleId, logInTroubleInfoId);
+  hideAndToggle(contactId, contactInfoClass);
   resetForms();
 
   //validate input
@@ -55,31 +55,19 @@ jQuery(function($) {
     if (currentUserVal.match(/^(.+)@iit\.edu|^(.+)@hawk.iit.edu/))
     {
       $(this).next('input:password').focus();
-      uservalue=currentUserVal.match(/^(.+)@/)[1];
+      var uservalue=currentUserVal.match(/^(.+)@/)[1];
       $('#username').val(uservalue);
 
     }
   });
 
-//checks to see if users enters "@hawk.iit.edu" or "@iit.edu" and  removes those parts
-  $('#username').on('keyup focus blur', function() {
-    var currentUserVal = $('#username').val();
-    if (currentUserVal.match(/^(.+)@iit\.edu|^(.+)@hawk.iit.edu/))
-    {
-      $(this).next('input:password').focus();
-      uservalue=currentUserVal.match(/^(.+)@/)[1];
-      $('#username').val(uservalue);
-
-    }
-  });
-
-	//function to hide and toggle text
-	function hideAndToggle(elementId, toggleElementId) {
-		$(toggleElementId).hide();
+  //function to hide and toggle text
+  function hideAndToggle(elementId, toggleElementId) {
+    $(toggleElementId).hide();
     $(elementId).on('click', function(event){
-    	event.preventDefault();
-    	$(toggleElementId).toggle();
-  	});
+      event.preventDefault();
+      $(toggleElementId).toggle();
+    });
   }
 
   //function for addCLass/focus
