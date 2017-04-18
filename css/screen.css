@@ -314,6 +314,12 @@ h4 a,
 	color: #FFF;
 }
 
+#academics #nav_academics a,
+#support #nav_support a,
+#student_life #nav_student_life a{
+    background:silver;
+}
+
 #forgot-password {
   margin-top: -0.6222em;
   padding-bottom: 0.6222em;
