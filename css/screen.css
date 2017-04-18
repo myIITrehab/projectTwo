@@ -226,7 +226,7 @@ h2 {
 h3 {
   text-transform: uppercase;
   font-family: "Helvetica Neue LT W01_41488878", Helvetica, Arial, sans-serif;
-  color: #331111;
+  color: rgb(229, 24, 55);
 }
 
 a {
@@ -305,10 +305,26 @@ input[type="submit"] {
   padding: 0.6222em;
 }
 
+h4 a,
+.time,
+.location,
+.course-content li a {
+	text-transform: uppercase;
+	font-size: 0.8em;
+	color: #FFF;
+}
+
 #forgot-password {
   margin-top: -0.6222em;
   padding-bottom: 0.6222em;
   font-weight: 900;
+}
+
+#reg-info,
+.course-content {
+	margin-bottom: 1.244em;
+	margin-top: 1.244em;
+	font-size: 0.8em;
 }
 
 #support {
@@ -319,8 +335,10 @@ input[type="submit"] {
 
 #monday, 
 #wednesday, 
-#friday {
-	background-color: rgb(47, 59, 68, 0.8);
+#friday,
+#reg-info,
+.course-content {
+	background-color: rgb(47, 59, 68, 0.9);
 	padding-left: 0.622em;
 	padding-bottom: 0.622em;
 }
@@ -335,7 +353,7 @@ input[type="submit"] {
 
 #class-schedule-label {
 	background-color: rgb(255, 255, 255, 0.8);
-	color: rgb(229, 24, 55);
+	color: rgb(0, 0, 0);
 	padding-top: 0.622em;
 	margin-bottom: -0.622em;
 	padding-left: 0.622em;
