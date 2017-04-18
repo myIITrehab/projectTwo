@@ -47,6 +47,18 @@ jQuery(function($) {
   $( '#login-form' ).submit(function(event) {
     event.preventDefault();
   });
+  
+  //checks to see if users enters "@hawk.iit.edu" or "@iit.edu" and  removes those parts
+  $('#username').on('keyup focus blur', function() {
+    var currentUserVal = $('#username').val();
+    if (currentUserVal.match(/^(.+)@iit\.edu|^(.+)@hawk.iit.edu/))
+    {
+      $(this).next('input:password').focus();
+      uservalue=currentUserVal.match(/^(.+)@/)[1];
+      $('#username').val(uservalue);
+
+    }
+  });
 
 //checks to see if users enters "@hawk.iit.edu" or "@iit.edu" and  removes those parts
   $('#username').on('keyup focus blur', function() {
