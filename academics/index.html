@@ -17,153 +17,94 @@
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
   </head>
-  <body>
-  	<div id="academics">
-  	  <nav class="nav links">
-      <ul>
-        <li><a href="./studentlife/index.html">Student Life</a></li>
-        <li><a href="./support/index.html">Support</a></li>
-      </ul>
-      </nav>
 
+  <body id="academics">
+    <div id="page">
+      <header>
+    		<figure>
+						<img src="/img/iitlogo.png" alt="IIT Logo"/>
+				</figure>
+        <nav id="navbar">
+          <ul>
+            <li class="active"><a href="/academics/index.html">Academics </a></li>
+            <li><a href="/studentlife/index.html">Student Life</a></li>
+            <li><a href="/support/index.html">Support</a></li>
+          </ul>
+        </nav>
+      </header>
 
-    <table>
-    <tr>
-      <th>Monday</th>
-      <th>Tuesday</th>
-      <th>Wednesday</th>
-	    <th>Thursday</th>
-	    <th>Friday</th>
-	    <th>Saturday</th>
-	  </tr>
+      <main id="class-schedule">
+        <section id="reg-info">
+      	<h2 id="class-schedule-label">Class Schedule</h2>
+      	<section class="schedule" id="monday">
+					<h3>Monday</h3>
+					<h4><a href="/courses/psych/index.html">Psych-301</a></h4>
+					<ul>
+						<li class="time">11:25am - 12:40pm</li>
+						<li class="location">Ph 108</li>
+					</ul>
+					<h4><a href="/courses/hci/index.html">Itmd-362</a></h4>
+					<ul>
+						<li class="time">3:15pm - 4:30pm</li>
+						<li class="location">Sb 111</li>
+					</ul>
+				</section>
 
-<!-- Psych course info-->
-    <tr>
-      <td>PSYCH-301 </td>
+				<section class="schedule" id="tuesday">
+					<h3>Tuesday</h3>
+				</section>
 
-      <th></th>
-      <td>PSYCH-301 </td>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
+				<section class="schedule" id="wednesday">
+					<h3>Wednesday</h3>
+					<h4><a href="/courses/psych/index.html">Psych-301</a></h4>
+					<ul>
+						<li class="time">11:25am - 12:40pm</li>
+						<li class="location">Ph 108</li>
+					</ul>
+					<h4><a href="/courses/hci/index.html">Itmd-362</a></h4>
+					<ul>
+						<li class="time">3:15pm - 4:30pm</li>
+						<li class="location">Sb 111</li>
+					</ul>
+					<h4><a href="/courses/data/index.html">Itmd-421</a></h4>
+					<ul>
+						<li class="time">6:25pm - 9:05pm</li>
+						<li class="location">Sb 111</li>
+					</ul>
+				</section>
 
-  <tr>
-    <td>11:25AM - 12:40PM</td>
-    <th></th>
-    <td>11:25AM - 12:40PM</td>
-    <th></th>
-    <th></th>
-    <th></th>
-    </tr>
+				<section class="schedule" id="thursday">
+					<h3>Thursday</h3>
+				</section>
 
-  <tr>
-    <td>PH 108</td>
-    <th></th>
-    <td>PH 108</td>
-    <th></th>
-    <th></th>
-    <th></th>
-    </tr>
+				<section id="friday">
+					<h3>Friday</h3>
+					<h4><a href="/courses/netwk/index.html">Itmo-440</a></h4>
+					<ul>
+						<li class="time">6:25pm - 9:05pm</li>
+						<li class="location">Ph 108</li>
+					</ul>
+				</section>
 
-<tr></tr> <!-- Space in between coures -->
-<!-- HCI course info -->
+        <section class="schedule" id="reg-info">
+          <h3>Student Information</h3>
+          <ul>
+            <li>Student ID: A2000000</li>
+            <li>Student PIN: 0000000</li>
+            <li><a href="#class-schedule">Back to class schedule</a></li>
+          </ul>
+      </section>
 
-  <tr>
-      <td>ITMD-362 </td>
-      <th></th>
-      <td>ITMD-362 </td>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
+        </section>
+      </main>
 
-  <tr>
-    <td>3:15PM - 4:30PM</td>
-    <th></th>
-    <td>3:15PM - 4:30PM</td>
-    <th></th>
-    <th></th>
-    <th></th>
-    </tr>
-
-  <tr>
-    <td>SB 111</td>
-    <th></th>
-    <td>SB 111</td>
-    <th></th>
-    <th></th>
-    <th></th>
-    </tr>
-
-<tr></tr> <!-- Space in between coures -->
-<!-- Database course info -->
-
-  <tr>
-      <th></th>
-      <th></th>
-      <td>ITMD-421 </td>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-
-  <tr>
-    <th></th>
-    <th></th>
-    <td>6:25PM - 9:05PM</td>
-    <th></th>
-    <th></th>
-    <th></th>
-    </tr>
-
-  <tr>
-    <th></th>
-    <th></th>
-    <td>SB 111</td>
-    <th></th>
-    <th></th>
-    <th></th>
-    </tr>
-
-<tr></tr> <!-- Space in between coures; we can also probably just do this in css -->
-<!-- Database course info -->
-
-  <tr>
-      <th></th>
-      <th></th>
-      <th></th>
-      <td>ITMO-440 </td>
-      <th></th>
-      <th></th>
-    </tr>
-
-  <tr>
-    <th></th>
-    <th></th>
-    <th></th>
-    <td>6:25PM - 9:05PM</td>
-    <th></th>
-    <th></th>
-    </tr>
-
-  <tr>
-    <th></th>
-    <th></th>
-    <th></th>
-    <td>SB 113</td>
-    <th></th>
-    <th></th>
-    </tr>
-
-</table>
-
-			<footer>
-					<p>Copyright &copy; Akvile Kiskis, Isabel Jaramillo, Aury Bwashi, and
-					Shameemah Fuseini-Codjoe. All rights reserved.</p>
+      <footer>
+				Copyright &copy; Akvile, Isabel, Aury, and
+				Shameemah. All rights reserved.
 			</footer>
-				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-				<script src="/js/site.js"></script>
-      </div>
-    </body>
- </html>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="/js/site.js"></script>
+  </body>
+</html>

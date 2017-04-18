@@ -194,7 +194,7 @@ html {
   -o-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
-  text-align: center;
+  text-align: left;
   font-size: 1.406em; /*22.5px @ 16px */
   line-height: 1.22em; /*28px @ 18px */
   font-family: "Helvetica Neue LT W01_35 Thin", Helvetica, Arial, sans-serif;
@@ -205,14 +205,15 @@ body {
   margin: 0.5em;
 }
 
-header, footer {
-  background-color: rgba(0, 0, 0, 0.66);
+header {
+  background-color: rgb(47, 59, 68, 0.9);
   padding-top: 0.622em;
 }
 
 h1 {
   font-size: 1.562em;/* 35.156px @ 22.5px*/
   line-height: 1.593em; /*56px @ 35.156px*/
+  text-align: center;
   font-family: "Helvetica Neue LT W01_55 Roman", Helvetica, Arial, sans-serif;
 }
 
@@ -225,19 +226,19 @@ h2 {
 h3 {
   text-transform: uppercase;
   font-family: "Helvetica Neue LT W01_41488878", Helvetica, Arial, sans-serif;
-  color: #331111;
+  color: rgb(229, 24, 55);
 }
 
 a {
   color: rgb(229, 24, 55);
 }
 
-
 /* Form */
 
 form {
-	padding-top: 1.244em;
-	background-color: rgba(255, 255, 255, 0.66);
+  padding-top: 1.244em;
+  background-color: rgba(255, 255, 255, 0.66);
+  text-align: center;
 }
 
 label {
@@ -260,13 +261,24 @@ img {
   display: block;
   max-width: 40%;
   margin-left: auto;
-  margin-right: auto; 
+  margin-right: auto;
 }
+
+footer {
+  font-size: 0.77em; /*17px @ 22.5px */
+  padding: 0.622em;
+  background-color: rgb(47, 59, 68, 0.9);
+}
+
 /* ===== LAYOUT STYLES ===== */
 h3 {
   margin-top: 0.6222em; /* 14px @ 22.5px*/
   padding-top: 0.6222em; /* 14px @ 22.5px*/
   padding-bottom: 0.6222em; /* 14px @ 22.5px*/
+}
+
+main{
+	margin-top: 1.2444em;
 }
 
 #page {
@@ -280,37 +292,110 @@ form li {
 
 input[type="text"],
 input[type="password"] {
-	color: black;
-	border: 0;
-	padding: 0.9em;
+  color: black;
+  border: 0;
+  padding: 0.9em;
 }
 
 input[type="submit"] {
   border: 0;
   font-family: "Helvetica Neue LT W01_55 Roman", Helvetica, Arial, sans-serif;
   color: #FFF;
- 	background-color: rgb(47, 59, 68);
-	padding: 0.6222em;
+  background-color: rgb(47, 59, 68);
+  padding: 0.6222em;
 }
 
-#forgot-password {
-	margin-top: -0.6222em;
-	padding-bottom: 0.6222em;
-	font-weight: 900;
-}
-
-#support {
-	background-color: rgb(47, 59, 68, 0.8);
-	text-align: left;
-	padding: 1.244em;
-}
-
-.contact-info a {
+h4 a,
+.time,
+.location,
+.course-content li a {
+	text-transform: uppercase;
+	font-size: 0.8em;
 	color: #FFF;
 }
 
+#forgot-password {
+  margin-top: -0.6222em;
+  padding-bottom: 0.6222em;
+  font-weight: 900;
+}
+
+#reg-info,
+.course-content {
+	margin-bottom: 1.244em;
+	margin-top: 1.244em;
+	font-size: 0.8em;
+}
+
+#support {
+  background-color: rgb(47, 59, 68, 0.9);
+  padding: 1.244em;
+  margin-bottom: 1.244em;
+}
+
+#navbar ul li.active {
+	background: rgb(229, 24, 55);
+}
+
+#monday,
+#wednesday,
+#friday,
+#reg-info,
+.course-content {
+	background-color: rgb(47, 59, 68, 0.9);
+	padding-left: 0.622em;
+	padding-bottom: 0.622em;
+}
+
+#tuesday,
+#thursday {
+	background-color: rgb(255, 255, 255, 0.8);
+	margin-bottom: -0.622em;
+	margin-top: -0.622em;
+	padding-left: 0.622em;
+}
+
+#class-schedule-label {
+	background-color: rgb(255, 255, 255, 0.8);
+	color: rgb(0, 0, 0);
+	padding-top: 0.622em;
+	margin-bottom: -0.622em;
+	padding-left: 0.622em;
+}
+
+#navbar ul li {
+  text-transform: uppercase;
+  color: #FFF;
+  letter-spacing: 0.125em;
+  font-size: 0.703em;
+  padding: 0.622em 1.244em;
+  border-top: 0.1em solid rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+#navbar ul li:first-child {
+  margin-top: 0.622em;
+}
+
+.schedule ul li:last-child {
+	padding-bottom: 0.622em;
+}
+
+.contact-info a {
+  color: #FFF;
+}
+
+#navbar ul li a {
+  color: #FFF;
+}
 
 /* ===== STATE STYLES ===== */
+
+@media screen and (min-width: 37.5em) {
+
+}
+
+#navbar ul li:hover,
 input[type="submit"]:hover {
   color: #FFF;
   background-color: rgb(229, 24, 55);
@@ -318,7 +403,7 @@ input[type="submit"]:hover {
 }
 
 #forgot-password a:hover {
-	color: rgb(47, 59, 68);
+  color: rgb(47, 59, 68);
 }
 
 .hasjs input[type="submit"] {
