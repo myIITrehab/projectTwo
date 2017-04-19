@@ -189,16 +189,16 @@ http://www.modularscale.com/?18&px&1.2&web&text */
 
 html {
 	background-image: url("/img/mobilebg.jpg");
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
 	background-repeat: no-repeat;
-	text-align: left;
-	font-size: 1.406em; /*22.5px @ 16px */
-	line-height: 1.22em; /*28px @ 18px */
-	font-family: "Helvetica Neue LT W01_35 Thin", Helvetica, Arial, sans-serif;
+	background-size: cover;
 	color: #FFF;
+	font-family: "Helvetica Neue LT W01_35 Thin", Helvetica, Arial, sans-serif;  
+	font-size: 1.406em; /*22.5px @ 16px */ 
+	line-height: 1.22em; /*28px @ 18px */
+	text-align: left;
+	-moz-background-size: cover;  
+	-o-background-size: cover;
+	-webkit-background-size: cover;
 }
 
 body {
@@ -206,27 +206,28 @@ body {
 }
 
 header {
+  background-color: #2F3B44; /* fallback color */
 	background-color: rgba(47, 59, 68, 0.9);
 	padding-top: 0.622em;
 }
 
 h1 {
+	font-family: "Helvetica Neue LT W01_55 Roman", Helvetica, Arial, sans-serif;
 	font-size: 1.562em;/* 35.156px @ 22.5px*/
 	line-height: 1.593em; /*56px @ 35.156px*/
 	text-align: center;
-	font-family: "Helvetica Neue LT W01_55 Roman", Helvetica, Arial, sans-serif;
 }
 
 h2 {
 	font-family: "Helvetica Neue LT W01_41488878", Helvetica, Arial, sans-serif;
-	text-transform: uppercase;
 	padding-bottom: 0.6222em;
+	text-transform: uppercase;
 }
 
 h3 {
-	text-transform: uppercase;
-	font-family: "Helvetica Neue LT W01_41488878", Helvetica, Arial, sans-serif;
 	color: rgb(229, 24, 55);
+	font-family: "Helvetica Neue LT W01_41488878", Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
 }
 
 a {
@@ -236,52 +237,54 @@ a {
 /* Form */
 
 form {
-	padding-top: 1.244em;
+  background-color: #FFFFFF; /* fallback color */
 	background-color: rgba(255, 255, 255, 0.66);
+	padding-top: 1.244em;
 	text-align: center;
 }
 
 label {
+	color: black;  
 	display: block;
 	text-align: inherit;
 	width: 100%;
-	color: black;
 }
 
 input {
 	box-sizing: border-box;
-	width: 100%;
 	font-family: inherit;
 	font-size: inherit;
 	line-height: inherit;
 	text-align: inherit;
+	width: 100%;
 }
 
 img {
 	display: block;
-	max-width: 40%;
 	margin-left: auto;
 	margin-right: auto;
+	max-width: 40%;
 }
 
 footer {
+  background-color: #2F3B44; /* fallback color */
+	background-color: rgba(47, 59, 68, 0.9);
 	font-size: 0.77em; /*17px @ 22.5px */
 	padding: 0.622em;
-	background-color: rgba(47, 59, 68, 0.9);
 }
 
 /* ===== LAYOUT STYLES ===== */
 h3 {
 	margin-top: 0.6222em; /* 14px @ 22.5px*/
+  padding-bottom: 0.6222em; /* 14px @ 22.5px*/
 	padding-top: 0.6222em; /* 14px @ 22.5px*/
-	padding-bottom: 0.6222em; /* 14px @ 22.5px*/
 }
 
 main {
 	margin-top: 1.2444em;
 }
 
-#page {
+.page {
 	padding: 0.6222em; /* 14px @ 22.5px*/
 }
 
@@ -292,16 +295,16 @@ form li {
 
 input[type="text"],
 input[type="password"] {
-	color: black;
 	border: 0;
+	color: black;
 	padding: 0.9em;
 }
 
 input[type="submit"] {
-	border: 0;
-	font-family: "Helvetica Neue LT W01_55 Roman", Helvetica, Arial, sans-serif;
-	color: #FFF;
 	background-color: rgb(47, 59, 68);
+	border: 0;
+	color: #FFF;
+	font-family: "Helvetica Neue LT W01_55 Roman", Helvetica, Arial, sans-serif;
 	padding: 0.6222em;
 }
 
@@ -309,31 +312,32 @@ h4 a,
 .time,
 .location,
 .course-content li a {
-	text-transform: uppercase;
-	font-size: 0.8em;
 	color: #FFF;
+	font-size: 0.8em;
+	text-transform: uppercase;
 }
 
-#forgot-password {
+.forgot-password {
+	font-weight: 900;
 	margin-top: -0.6222em;
 	padding-bottom: 0.6222em;
-	font-weight: 900;
 }
 
 #reg-info,
 .course-content {
+	font-size: 0.8em;
 	margin-bottom: 1.244em;
 	margin-top: 1.244em;
-	font-size: 0.8em;
 }
 
-#support {
+.support {
+  background-color: #2F3B44; /* fallback color */
 	background-color: rgba(47, 59, 68, 0.9);
-	padding: 1.244em;
 	margin-bottom: 1.244em;
+	padding: 1.244em;
 }
 
-#navbar ul li.active {
+.navbar ul li.active {
 	background: rgb(229, 24, 55);
 }
 
@@ -342,13 +346,15 @@ h4 a,
 #friday,
 #reg-info,
 .course-content {
+  background-color: #2F3B44; /* fallback color */  
 	background-color: rgba(47, 59, 68, 0.9);
-	padding-left: 0.622em;
 	padding-bottom: 0.622em;
+	padding-left: 0.622em;
 }
 
 #tuesday,
 #thursday {
+  background-color: #FFFFFF; /* fallback color */
 	background-color: rgba(255, 255, 255, 0.8);
 	margin-bottom: -0.622em;
 	margin-top: -0.622em;
@@ -356,36 +362,39 @@ h4 a,
 }
 
 #class-schedule-label {
+  background-color: #FFFFFF; /* fallback color */
 	background-color: rgba(255, 255, 255, 0.8);
-	color: rgb(0, 0, 0);
-	padding-top: 0.622em;
+	color: rgb(0, 0, 0); 
 	margin-bottom: -0.622em;
 	padding-left: 0.622em;
+	padding-top: 0.622em;
 }
 
 .schedule ul li:last-child {
 	padding-bottom: 0.622em;
 }
 
-#navbar ul li {
-	text-transform: uppercase;
-	color: #FFF;
-	letter-spacing: 0.125em;
-	font-size: 0.703em;
-	padding: 0.622em 1.244em;
-	border-top: 0.1em solid rgba(0, 0, 0, 0.1);
+.navbar ul li {
+  background-color: rgb(0, 0, 0); /* fallback color */
 	background-color: rgba(0, 0, 0, 0.3);
+  border-top: 0.1em solid rgb(0, 0, 0); /* fallback color */
+	border-top: 0.1em solid rgba(0, 0, 0, 0.1);
+	color: #FFF;
+	font-size: 0.703em;
+	letter-spacing: 0.125em;
+	padding: 0.622em 1.244em;
+	text-transform: uppercase;
 }
 
-#navbar ul li:first-child {
+.navbar ul li:first-child {
 	margin-top: 0.622em;
 }
 
-.contact-info a {
+#contact-info a {
 	color: #FFF;
 }
 
-#navbar ul li a {
+.navbar ul li a {
 	color: #FFF;
 }
 
@@ -410,23 +419,23 @@ h4 a,
 		max-width: 20%;
 	}
 
-	#page {
+	.page {
 		padding: 1.244em;
 	}
 
-	#navbar {
+	.navbar {
 		margin: 0;
 	}
 
-	#navbar ul {
+	.navbar ul {
 		text-align: center;
 	}
 
-	#navbar ul li {
+	.navbar ul li {
 		display: inline-block;
-		width: 28%;
 		margin-left: -0.2em;
 		margin-right: -0.2em;
+		width: 18%;
 	}
 }
 
@@ -437,7 +446,7 @@ h4 a,
 		line-height: 1.2em;
 	}
 
-	#page {
+	.page {
 		padding: 2.44em;
 	}
 }
@@ -449,28 +458,28 @@ h4 a,
 		line-height: 1.2em;
 	}
 
-	#page {
+	.page {
 		padding: 4.88em;
 
 	}
 }
 
 
-#navbar ul li:hover,
+.navbar ul li:hover,
 input[type="submit"]:hover {
-	color: #FFF;
 	background-color: rgb(229, 24, 55);
 	box-shadow: none;
+	color: #FFF;
 }
 
-#forgot-password a:hover {
+.forgot-password a:hover {
 	color: rgb(47, 59, 68);
 }
 
 .hasjs input[type="submit"] {
-	transition: position 1s;
-	position: absolute;
 	left: -444.44em; /* -10000px @ 22.5px */
+	position: absolute;
+	transition: position 1s;
 }
 
 .hasjs input[type="submit"].active {
@@ -484,9 +493,9 @@ input[type="submit"]:hover {
 
 .hasjs #input-username label,
 .hasjs #input-password label {
-	transition: top 0.3s;
+	position: absolute;  
 	top: 0.9em; /* 28px @ 22.5px*/
-	position: absolute;
+	transition: top 0.3s;  
 }
 
 .hasjs #input-username label.login-active,
